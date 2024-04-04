@@ -1,0 +1,69 @@
+{
+ "actions": [
+  {
+   "action": "my_app.my_app.doctype.pet_food.api.say_hi",
+   "action_type": "Server Action",
+   "group": "Button",
+   "label": "Say Hi"
+  }
+ ],
+ "allow_rename": 1,
+ "autoname": "field:food_name",
+ "creation": "2024-04-03 10:31:44.111304",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "food_name",
+  "price",
+  "discount_price",
+  "ingredients"
+ ],
+ "fields": [
+  {
+   "fieldname": "food_name",
+   "fieldtype": "Data",
+   "label": "Food Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "discount_price",
+   "fieldtype": "Currency",
+   "label": "Discount Price"
+  },
+  {
+   "fieldname": "ingredients",
+   "fieldtype": "Table",
+   "label": "Ingredients",
+   "options": "Ingredient"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-03 15:40:36.154852",
+ "modified_by": "Administrator",
+ "module": "My App",
+ "name": "Pet Food",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
